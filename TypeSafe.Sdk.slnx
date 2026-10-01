@@ -1,0 +1,24 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path="AGENTS.md" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="global.json" />
+    <File Path="LICENSE" />
+    <File Path="nuget.config" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/Solution Items/Docs/">
+    <File Path="Docs/USAGE.md" />
+  </Folder>
+  <Folder Name="/Libraries/">
+    <Project Path="Source/TypeSafe.Sdk/TypeSafe.Sdk.csproj" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="Source/TypeSafe.Sdk.Tests/TypeSafe.Sdk.Tests.csproj" />
+  </Folder>
+  <Folder Name="/Samples/">
+    <Project Path="Source/Samples/TypeSafe.Sdk.Console/TypeSafe.Sdk.Console.csproj" />
+  </Folder>
+</Solution>
