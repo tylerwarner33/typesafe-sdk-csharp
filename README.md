@@ -15,19 +15,19 @@ using TypeSafe.Sdk;
 
 using (TypeSafeClient client = new())
 {
-	SystemOneResponse response = await client.SystemOneAsync(
-		"I was charged twice. Please fix this ASAP.",
-		new Dictionary<string, Question>
-		{
-			["category"] = Question.Choice("What is this ticket about?", new Dictionary<string, Entry>
-			{
-				["billing"] = Entry.Null,
-				["technical"] = Entry.Null,
-				["other"] = Entry.Null
-			})
-		});
+  SystemOneResponse response = await client.SystemOneAsync(
+    "I was charged twice. Please fix this ASAP.",
+    new Dictionary<string, Question>
+      {
+        ["category"] = Question.Choice("What is this ticket about?", new Dictionary<string, Entry>
+          {
+            ["billing"] = Entry.Null,
+            ["technical"] = Entry.Null,
+            ["other"] = Entry.Null
+          })
+      });
 
-	Console.WriteLine(response.Choices["category"].Choice);
+  Console.WriteLine(response.Choices["category"].Choice);
 }
 ```
 
